@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aditya Singh | DevSecOps Engineer</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#06132a,#0d1f42);
+    color:white;
+    min-height:100vh;
+}
+
+.navbar{
+    position:fixed;
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+    width:min(1100px,95%);
+    padding:15px 25px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:15px;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.2rem;
+    font-weight:700;
+    color:#4da6ff;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#4da6ff;
+}
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    padding:100px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #4da6ff;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:clamp(2.5rem,7vw,5rem);
+    margin-bottom:15px;
+}
+
+.highlight{
+    color:#4da6ff;
+}
+
+.hero p{
+    color:#cfd9e6;
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#4da6ff;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:30px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+    color:#4da6ff;
+    font-size:2rem;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:15px;
+}
+
+.skill{
+    padding:15px;
+    text-align:center;
+    border-radius:12px;
+    background:rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+    background:#1976ff33;
+}
+
+.exp-item{
+    margin-bottom:25px;
+}
+
+.exp-item h3{
+    color:#4da6ff;
+    margin-bottom:5px;
+}
+
+.contact-items{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-items a{
+    color:#8bc3ff;
+    text-decoration:none;
+}
+
+.resume-box{
+    text-align:center;
+}
+
+.download-btn{
+    border:none;
+    background:#4da6ff;
+    color:white;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+}
+
+.download-btn:hover{
+    background:#2488ff;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#9db4d1;
+}
+
+@media(max-width:700px){
+
+.navbar{
+    flex-direction:column;
+    gap:10px;
+}
+
+.nav-links{
+    gap:15px;
+}
+
+.hero img{
+    width:140px;
+    height:140px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">ADITYA SINGH</div>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <img src="Images/mine_photo.png" alt="Aditya Singh">
+
+        <h1>
+            Hi, I'm <span class="highlight">Aditya Singh</span>
+        </h1>
+
+        <p>
+            DevSecOps Engineer • Full Stack Developer • Startup Founder
+        </p>
+
+        <a class="btn" href="#contact">Get In Touch</a>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <section id="about" class="card">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p style="line-height:1.8;">
+            I'm Aditya Singh, a passionate developer specializing in
+            DevSecOps, Full Stack Development, Automation, Cloud,
+            CI/CD Pipelines, and Security Engineering.
+            I enjoy building scalable solutions, modern web applications,
+            and innovative startup products.
+        </p>
+
+    </section>
+
+    <section id="skills" class="card">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Python</div>
+            <div class="skill">C</div>
+            <div class="skill">C++</div>
+            <div class="skill">C#</div>
+            <div class="skill">Docker</div>
+            <div class="skill">GitHub Actions</div>
+            <div class="skill">CI/CD</div>
+            <div class="skill">PostgreSQL</div>
+            <div class="skill">SQLite</div>
+            <div class="skill">YAML</div>
+            <div class="skill">DevSecOps</div>
+
+        </div>
+
+    </section>
+
+    <section id="experience" class="card">
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="exp-item">
+            <h3>Python Developer Intern</h3>
+            <p>Labmentix</p>
+        </div>
+
+        <div class="exp-item">
+            <h3>Freelance Developer</h3>
+            <p>
+                Worked with multiple real-world projects and clients.
+            </p>
+        </div>
+
+        <div class="exp-item">
+            <h3>Founder & CEO</h3>
+            <p>
+                Building startups and developing innovative software products.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="card resume-box">
+
+        <h2 class="section-title">Resume</h2>
+
+        <a href="resume.pdf" download>
+            <button class="download-btn">
+                Download Resume
+            </button>
+        </a>
+
+    </section>
+
+    <section id="contact" class="card">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-items">
+
+            <p>
+                📧 Email:
+                <a href="mailto:adityasinghofficial332@gmail.com">
+                    adityasinghofficial332@gmail.com
+                </a>
+            </p>
+
+            <p>
+                💼 LinkedIn:
+                <a href="https://www.linkedin.com/in/aditya-singh-090854436/"
+                   target="_blank">
+                    View Profile
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Aditya Singh. All Rights Reserved.
+</footer>
+
+</body>
+</html>
